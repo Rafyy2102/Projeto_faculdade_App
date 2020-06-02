@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. este é actionBar ond aparece o nome da aplicação pode ser tirada ou não  NokActionBar-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FF5722</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

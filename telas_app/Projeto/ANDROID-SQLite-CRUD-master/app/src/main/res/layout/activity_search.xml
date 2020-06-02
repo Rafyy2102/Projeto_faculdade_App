@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSegundo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelTop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="Pesquisa por CPF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pesquisaCPF"
+        android:layout_width="352dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:hint="Digite o CPF"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPesquisar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="292dp"
+        android:background="@color/colorAccent"
+        android:text="Pesquisar"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
