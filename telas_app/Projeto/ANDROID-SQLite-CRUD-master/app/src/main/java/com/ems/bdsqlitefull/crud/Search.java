@@ -38,9 +38,6 @@ public class Search extends AppCompatActivity {
             public void onClick(View v) {
                 db = openOrCreateDatabase("db_cliente", Context.MODE_PRIVATE, null);
 
-                // Alterei o modo de realização da consulta, como havia falado e ontem e funcionou.
-                // Pode ser algo no Android Studio que estava sendo executado, pois tive que baixar uns addons diferentes.
-                // Enfim, está funcionando.
                 Cursor c = db.rawQuery("SELECT * FROM cliente WHERE cpf=?", new String[]{cpf.getText().toString()});
                 while (c.moveToNext()) {
                     cliente = new Cliente(
